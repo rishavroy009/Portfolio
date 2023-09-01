@@ -1,0 +1,1576 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+body{transition: background-color 0.3s, color 0.3s;}
+
+.firstdiv{
+height:55rem;
+display: flex;
+}
+.wrapper2{
+    /* display: flex;*/
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+ 
+ 
+     width:85%;
+     margin: auto;
+ }
+ .container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 40px 0;
+     margin-top:5%;
+ }
+ .container .box{
+     position: relative;
+     width: 320px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 40px 30px;
+     transition: 0.5s;
+ }
+ .container .box::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 50px;
+     width: 50%;
+     height: 100%;
+     border-radius: 8px;
+     transform: skewX(15deg);
+     transition: 0.5s;
+     background: linear-gradient(rgb(249, 69, 14),rgba(255,255,255,0.01),rgb(235, 59, 59));
+ }
+ #skillh{
+     color:white;
+     font-family: Poppins;
+     letter-spacing: 0.04em;
+     font-size:2.7rem;
+ }
+ .container .box::after{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 50px;
+     width: 50%;
+     height: 100%;
+     border-radius: 8px;
+     transform: skewX(15deg);
+     transition: 0.5s;
+     filter: blur(40px);
+     background: linear-gradient(#ffbc00,rgba(255,255,255,0.01));
+ }
+ .container .box:hover::before,
+ .container .box:hover::after{
+     background: linear-gradient(315deg,#ffbc00,#ff0058);
+ }
+ .container .box:hover::before,
+ .container .box:hover::after{
+     transform: skewX(0deg);
+     left: 10px;
+     width: 200px;
+ }
+ .container .box span{
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+ }
+ .container .box span::before{
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -5px;
+     width: 100%;
+     height: 100%;
+     border-radius: 8px;
+     background: rgba(255,255,255,0.1);
+     backdrop-filter: blur(10px);
+     transition: 0.5s;
+     opacity: 0;
+     animation: animate 2s ease-in-out infinite;
+     box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+ }
+ @keyframes animate {
+     0%,100%{
+         transform: translateY(10px);;
+     }
+     50%{
+         transform: translateY(-10px);;
+     }
+ }
+ .container .box:hover span::before{
+     top: -50px;
+     left: 10px;
+     width: 25%;
+     height: 20%;
+     opacity: 1;
+ }
+ 
+ 
+ .container .box span::after{
+     content: '';
+     position: absolute;
+     bottom: 0;
+     right: -5px;
+     width: 100%;
+     height: 100%;
+     border-radius: 8px;
+     background: rgba(255,255,255,0.1);
+     backdrop-filter: blur(10px);
+     transition: 0.5s;
+     opacity: 0;
+     animation: animate 2s ease-in-out infinite;
+     box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+     animation-delay: -1s;
+ }
+ .container .box:hover span::after{
+     bottom: -50px;
+     right: 10px;
+     width: 25%;
+     height: 20%;
+     opacity: 1;
+ }
+ #data{
+     position: relative;
+     left: 0;
+     padding: 20px 40px;
+     /* background: rgba(255.255,255,0.05); */
+     box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+     border-radius: 8px;
+     backdrop-filter: blur(10px);
+     z-index: 1;
+     transform: 0.5;
+     color: black;
+     transition: 1s;
+ }
+ .container .box:hover #data{
+     left: -50px;
+     padding: 60px 40px;
+ }
+ 
+ 
+#excep1{
+    color:rgb(241, 76, 76);
+   
+}
+.topcon{
+
+    position: relative;
+    left:7%;
+    top:5%;
+    width: 60%;
+}
+.moving{
+    animation: move 0.9s linear;
+}
+@keyframes move {
+    0%{
+        transform: translateY(5em);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#firsth{
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+
+}
+.firsthlight{
+    color: rgb(17, 17, 17);
+}
+
+
+.main{
+            background-color: rgb(252, 237, 216);
+            height:34rem;
+            width:75%;
+            overflow:visible;
+            position: relative;
+            margin:auto;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+
+        
+        }
+        .over{
+            height:31rem;
+            width:35%;
+            background-color:rgb(218, 92, 92);
+            position: absolute;
+
+            box-shadow: 3px 6px 20px 5px rgb(113, 10, 10);
+            border-bottom-right-radius: 10px;
+        
+        }
+        .first{
+            color: rgb(252, 237, 216);
+            letter-spacing:1.5px;
+            font-weight: bold;
+            margin-left: 2.5rem;
+            margin-top: 2.8rem;
+            font-size: 2rem;
+            font-family: Ubuntu;
+            word-spacing:0.1rem;
+            margin-bottom:4rem;
+            cursor:default;
+
+        }
+        .sp1{
+            color: white;
+            line-height: 1.4;
+            letter-spacing: 0.1rem;
+            margin-left: 4rem;
+            font-size: 1rem;
+            font-family: Open Sans;
+            display: block;
+            margin-top: 0.8rem;
+            
+        }
+        hr{
+            width:65%;
+            background-color: rgb(252, 237, 216);
+            height: 1px;
+            border: 0px;margin-top: 20px;
+        }
+        img.foot{
+            height:2rem;
+            color:white;
+            border-width: 0px;
+            transition: transform 0.5s;
+        }
+        img.foot:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .contactp{
+            margin-top:2.8rem;
+            text-align: center;
+            word-spacing: 1rem;
+        }
+        .top{
+            height:19px;
+            width:19px;
+
+
+        }
+        #excel{
+            margin-left: 8%;
+        }
+        .entry{
+            width:48%;
+         
+            position: relative;
+            top:8%;
+            left:43%;
+            height:66%;
+        }
+        .sec{
+            color:rgb(218, 92, 92);
+            letter-spacing:0.1rem;
+            font-weight: bold;
+            margin-top: 2.8rem;
+            font-size: 2rem;
+            font-family: Ubuntu;
+            word-spacing: 0.1rem;
+            margin-bottom:4rem;
+            cursor:default;
+        }
+        .inl1{
+            border: 0px;
+            border-bottom: 1px solid rgb(19, 76, 57);
+            background-color: rgb(252, 237, 216);
+            width:80%;
+            height:2rem;
+            font-family: Poppins;
+            font-size: 1rem;
+        }
+        textarea.inl1{
+            height: 6rem;
+        }
+        .btnl1{
+            border-radius: 0px;
+            border:0px;
+            background-color:rgb(218, 92, 92);
+            color: white;
+            padding: 0.5rem;
+            width:22%;
+            font-size: 0.9rem;
+            margin-top: 7%;
+            font-family: Ubuntu;
+            position: relative;
+            left:59%;
+            box-shadow: 2px 2px 8px 0px rgb(126, 16, 16);
+            transition: scale 0.3s;
+        }
+        .btnl1:hover{
+            color:rgb(218, 92, 92);
+            background-color: rgb(246, 218, 178);
+            box-shadow: 2px 2px 8px 0px rgb(244, 193, 151);
+            cursor: pointer;
+            scale:1.1;
+        }
+
+.dark-theme{
+    background-color: rgb(26, 25, 25);
+}
+.card{
+    height:40rem;
+    width:22%;
+    border: 0.2px solid rgb(187, 185, 185);
+    border-radius: 30px;
+    position:relative;
+    color: white;
+    top: 6.25rem;
+    left:1.875rem;
+    text-align: center;
+    transition: scale 1s;
+    box-shadow:0px 25px 45px rgba(234, 45, 45, 0.2) ;
+    background: transparent;
+
+
+}
+.card:hover{
+    scale:0.95;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width:1.8%;
+    border: 1px solid rgb(144, 44, 44);
+    border-radius: 24px;
+    padding: 10px;
+    position: fixed;
+    height:40%;
+    right:3%;
+    top:25%;
+    justify-content: space-between;
+    padding-top: 2.5%;
+    padding-bottom:2.5%;
+    transition: height 1s;
+
+
+
+}
+nav:hover{
+height:45%;
+cursor: pointer;
+}
+nav > img:hover{
+transform: scale(1.3);
+border-radius: 50%;
+filter: invert(62%) sepia(25%) saturate(7000%) hue-rotate(324deg) brightness(96%) contrast(92%);
+}
+
+.mail{
+    display: block;
+    color: rgb(203, 193, 193);
+    font-family: poppins;
+    letter-spacing: 0.125rem;
+    margin-top: 6.25rem;
+    font-size: 1rem;
+}
+#details{
+color:rgb(245, 92, 92);
+font-family: Ubuntu;
+font-size: 0.938rem;
+letter-spacing: 0.081rem;
+
+}
+.bar{
+    color:  rgb(203, 193, 193);
+}
+.copy1{
+    font-family:Open Sans;
+    font-size: 0.75rem;
+    color:  rgb(203, 193, 193);
+    letter-spacing: 1.2px;
+}
+.social img{
+    border:1px solid  rgb(44, 42, 42);
+    border-radius:50%;
+    padding:0.5rem;
+    cursor: pointer;
+    filter: invert(88%) sepia(5%) saturate(288%) hue-rotate(314deg) brightness(93%) contrast(82%);
+    transition: filter 1s;
+    transition: scale 1s;
+
+}
+.social img:hover{
+    filter: invert(62%) sepia(25%) saturate(7000%) hue-rotate(324deg) brightness(96%) contrast(92%);
+   scale: 0.9;
+
+}
+.social{
+    margin-top: 1.875rem;
+    letter-spacing: 0.813rem;
+    
+}
+.btn1{
+    margin-top:12% ;
+    font-family: Open Sans;
+    width:76%;
+    height:8%;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+
+    border-radius:25px;
+    border:1.3px solid  rgb(218, 92, 92);
+    background-color:  rgb(218, 92, 92);
+    transition: scale 1s;
+
+}
+.btn1:hover{
+    background-color:  rgb(26, 25, 25);
+    color:  rgb(218, 92, 92);
+    cursor:pointer;
+    scale:1.03;
+}
+#firsth{
+color: white;
+font-family: Open Sans;
+}
+#firstd{
+    color: white;
+    font-family: Poppins;
+    font-size: 3.125rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.selfd{
+    margin-top: 5%;
+    color:rgb(139, 137, 137);
+    font-family:Open Sans;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.7px;
+    word-spacing: 1px;
+    width:90%;
+    margin-bottom: 11%;
+    
+}
+#spintro{
+    color: rgb(251, 192, 109);
+    font-family: Poppins;
+}
+.about{
+    position: relative;
+
+    width:85%;
+    padding:2%;
+    left:2%;
+    margin-top:10%;
+
+    border-radius: 2%;
+}
+.abouth{
+border:1px solid rgb(211, 203, 203);
+font-family: Open Sans;
+font-size: 0.9rem;
+width:5rem;
+display: flex;
+border-radius: 3em;
+padding:0.8rem;
+
+}
+#abouti{
+    width:1.3rem;
+    height: 1.3rem;
+
+}
+#spa{
+    margin-top:2%;
+    margin-left:5%;
+    color:rgb(205, 204, 204);
+    letter-spacing: 1px;
+}
+.aboutc{
+
+width:55%;
+position: relative;
+top:15%;
+
+}
+#ha1{
+color:white;
+font-family: Poppins;
+letter-spacing: 0.06em;
+font-size:2.7em;
+
+}
+#spac{
+color:rgb(218, 92, 92);
+
+}
+.aboutcd{
+    font-family: Open Sans;
+    color:rgb(171, 166, 166);
+    line-height: 1.8em;
+    letter-spacing: 0.03em;
+    
+}
+#refer{
+    height: 25rem;
+    width:25rem;
+    margin-left: 10%;
+    animation:jumping 3s linear infinite;
+    transition: animation 5s;
+    border-radius: 50%;
+
+}
+@keyframes jumping{
+    0%{
+        transform: translateY(0em)rotateZ(0deg);
+    }
+    25%{
+        transform: translateY(1.5em);
+    }
+    80%{
+        transform: translateY(-1em)rotateZ(2deg);
+    }
+    100%{
+        transform: translateY(0em)rotateX(0deg);
+    }
+}
+.aboutflex{
+    display: flex;
+
+
+}
+.edu{
+    margin-top: 12%;
+height: 37.5rem;
+text-align: center;
+
+}
+#eduh{
+color:white;
+font-family: Open Sans;
+font-size: 2.3em;
+letter-spacing: 0.04em;
+}
+#spe{
+color:rgb(218, 92, 92);
+
+}
+#mark1{
+    font-family: Open Sans;
+    font-size: 6rem;
+    color:rgb(250, 78, 78);
+    transition: color 1s;
+    transition: transform 1s;
+
+}
+#mark1:hover{
+    color:rgb(251, 192, 109);
+
+    transform: scale(1.1);
+    text-shadow: 2px 2px 10px rgb(116, 116, 115);
+
+}
+#marks1{
+    font-size:1rem;
+    color:rgb(139, 137, 137);
+    letter-spacing: 0.03em;
+    display: block;
+
+}
+.introflex{
+    display: flex;
+    justify-content: space-between;
+    width:87%;
+}
+
+.educontent{
+    margin: auto;
+    border-left:0.8px solid rgb(224, 220, 220);
+    width:40%;
+    text-align: left;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0;
+    padding-left: 3%;
+    margin-left: 32%;
+    margin-top: 5%;
+    animation:incre 2s ease-in-out infinite;
+    transition-property: border 1s;
+}
+@keyframes incre{
+    0%{
+        border-left-color:rgb(224, 220, 220);
+    }
+    25%{
+        border-left-color:rgb(191, 79, 79);
+    }
+    50%{
+        border-left-color:rgb(139, 40, 40);
+    }
+    75%{
+        border-left-color: rgb(240, 132, 132);
+    }
+    80%{
+        border-left-color:rgb(250, 195, 195);
+    }
+    100%{
+        border-left-color:rgb(224, 220, 220);
+    }
+}
+
+#spedu1{
+color:white;
+font-family:Open Sans;
+line-height: 2.3em;
+display: block;
+letter-spacing: 0.05em;
+}
+#edup1{
+color: rgb(183, 187, 192);
+font-family: Poppins;
+font-size: 1em;
+letter-spacing: 0.03em;
+}
+#spedu1:hover{
+    color:rgb(218, 92, 92);
+    cursor: pointer;
+
+}
+.leftright{
+    animation: lefttoright 1s linear;
+}
+@keyframes lefttoright {
+    0%{
+        transform:translateX(4em) ;
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0em);
+        opacity: 1;
+    }
+}
+.navcolor{
+    filter: invert(62%) sepia(25%) saturate(7000%) hue-rotate(324deg) brightness(96%) contrast(92%);
+}
+.service{
+
+    width:83%;
+    margin:auto ;
+    margin-top: 12%;
+    padding:1%;
+    position: relative;
+    height:80rem;
+
+}
+.serviceh{
+    border:1px solid rgb(211, 203, 203);
+font-family: Open Sans;
+font-size: 0.8rem;
+width:5rem;
+display: flex;
+border-radius: 3em;
+padding:0.9rem;
+
+}
+#sps{
+    margin-top:2%;
+    margin-left:5%;
+    color:rgb(205, 204, 204);
+    letter-spacing: 1px;
+}
+#seh{
+    color:white;
+    font-family: Poppins;
+    letter-spacing: 0.08rem;
+    font-size:2.7rem;
+    margin-top: 3%;
+}
+.service1{
+    border-left:1px solid rgb(121, 121, 120);
+    border-right:1px solid rgb(121, 121, 120);
+    border-bottom:1px solid rgb(121, 121, 120);
+    position: relative;
+    height:16%;
+    width:68%;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    margin: auto;
+    margin-top: 6%;
+    transition: border 0.8s;
+
+}
+.service1:hover{
+    border-color: firebrick;
+}
+.serp1{
+    color: rgb(252, 237, 216);
+    font-family: Open Sans;
+    font-size: 1.5rem;
+    margin-left: 8%;
+    letter-spacing: 0.04rem;
+    padding-top: 3%;
+    cursor: pointer;
+
+}
+.service1:hover>.serp1{
+    color:rgb(197, 72, 72);
+}
+#spser1{
+    color:rgb(178, 169, 169);
+    font-family: Open Sans;
+    letter-spacing: 0.05rem;
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    display: block;
+}
+#projects{
+    color:aliceblue;
+    display: block;
+    margin-left: 8%;
+    margin-top: 5%;
+    font-family: Poppins;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+}
+.service1:hover>#projects{
+    text-decoration: underline;
+}
+#imgs1{
+    height:3.7rem;
+    position: absolute;
+    top:18%;
+    left:85%;
+    filter: invert(35%) sepia(8%) saturate(6785%) hue-rotate(324deg) brightness(80%) contrast(102%);
+    transition: filter 0.8s;
+}
+.service1:hover>#imgs1{
+    filter: invert(77%) sepia(5%) saturate(2650%) hue-rotate(315deg) brightness(96%) contrast(105%);
+}
+
+.servicemover{
+    animation:servmov 1s linear;
+}
+@keyframes servmov {
+    0%{
+        transform: translateX(-15em);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0em);
+        opacity: 1;
+    }
+    
+}
+.displaymover{
+    animation: dispm 1s linear;
+}
+@keyframes dispm {
+    0%{
+        transform: translateX(15em);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0em);
+        opacity: 1;
+    }
+    
+}
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    color: white;
+    animation: jumpInfinite 1.5s infinite;
+    top:87%;
+    transform: scale(1.2);
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+    transition: color 1s;
+  }
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 30px;
+      color:rgb(210, 69, 69);
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  
+.projectsdiv{
+
+    width:83%;
+    margin:auto ;
+    margin-top: 12%;
+    padding:1%;
+    position: relative;
+    height:180vh;
+    text-align: center;
+}
+#projecth{
+    color:white;
+    font-family: Open Sans;
+    letter-spacing: 0.04em;
+    font-size:2.7em;
+    margin-top: 3%;
+}
+.projectcont1{
+  
+    height:23%;
+display: flex;
+    justify-content: space-between;
+    margin-top:5%;
+}
+.contents{
+   
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    width:55%;
+    border-top:1px solid rgb(121, 121, 120);
+    border-left:1px solid rgb(121, 121, 120);
+    border-bottom:1px solid rgb(121, 121, 120);
+    transition: border 0.7s;
+    cursor: pointer;
+    overflow: scroll;
+}
+.display{
+    border-top:1px solid rgb(121, 121, 120);
+    border-right:1px solid rgb(121, 121, 120);
+    border-bottom:1px solid rgb(121, 121, 120);
+    width:40%;
+    border-top-right-radius: 1.3rem;
+    border-bottom-right-radius:1.3em;
+   
+
+}
+.projh1{
+    color: rgb(252, 237, 216);
+    font-family: Open Sans;
+    font-size: 2rem;
+    letter-spacing: 0.04rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.contents:hover>.projh1{
+    color:rgb(197, 72, 72);
+}
+.projcp{
+    font-family: Open Sans;
+    color:rgb(132, 129, 129);
+    letter-spacing: 0.03rem;
+    text-align: left;
+    margin: auto;
+    width:85%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    
+}
+.contents:hover{
+    border-color: firebrick;
+}
+.projcp2{
+    font-family: Open Sans;
+    color:rgb(132, 129, 129);
+    letter-spacing: 0.03rem;
+    text-align: left;
+    margin: auto;
+    width:85%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+.themei{
+    position: absolute;
+    height:6%;
+    right:3%;
+    top:5%;
+    filter: invert(90%) sepia(7%) saturate(723%) hue-rotate(339deg) brightness(105%) contrast(98%);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgb(68, 66, 66);
+}
+.light-theme{
+    background-color: rgb(253, 189, 137);
+}
+.themebuttonl{
+    box-shadow: 2px 2px 10px black;
+    filter:none;
+
+}
+.cardshad{
+    box-shadow:0px 15px 40px rgb(65, 64, 64);
+    border: 0.5px solid rgb(217, 32, 32);
+}
+.mailcolor{
+    color: white;
+}
+.copy1light{
+    color: white;
+}
+.sociallight img{
+    filter: invert(92%) sepia(4%) saturate(817%) hue-rotate(324deg) brightness(109%) contrast(96%);
+}
+
+/*media queries for tab*/
+
+@media only screen and (max-width:1024px) and (min-width : 768px)
+{
+.card {
+width:35%;
+height:37.5rem;
+}
+.topcon{
+    width:55%;
+}
+.service{
+    height:60rem;
+}
+.nav{
+    width:3%;
+}
+.mail{
+    font-size: 0.7rem;
+}
+#selfp{
+    width:12rem;
+    height:20rem;
+}
+.social img{
+    scale:0.9;
+    
+}
+.social{
+    letter-spacing: 0.314rem;
+}
+.btn1{
+    height:6%;
+    font-size: 11px;
+}
+#mark1{
+font-size: 3.7rem;
+}
+#firsth{
+    font-size: 4rem;
+}
+#firstd{
+    font-size: 2rem;
+}
+.selfd{
+    font-size: 0.8rem;
+}
+
+#marks1{
+    font-size: 0.8rem;
+}
+.about{
+    margin-top: 0;
+}
+.aboutc{
+    width:60%;
+}
+#refer{
+    height: 19rem;
+    width:19rem;
+    margin-left: 0;
+    position: relative;
+    margin: auto;
+}
+#ha1{
+    letter-spacing: 0.04rem;
+font-size:2rem;
+}
+#eduh{
+    font-size:2rem;
+letter-spacing: 0.04em;
+}
+.educontent{
+    margin-left: 25%;
+    width:60%;
+}
+#seh{
+    letter-spacing: 0.06rem;
+    font-size:2rem;
+    margin-top: 10%;
+}
+
+.service1{
+    height:15%;
+    width:75%;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    margin: auto;
+    margin-top: 6%;
+}
+.serp1{
+    font-size: 1.1rem;
+    margin-left: 6%;
+    letter-spacing: 0.03rem;
+    padding-top: 2%;
+}
+#spser1{
+    letter-spacing: 0.03rem;
+    margin-left: 6%;
+    font-size: 0.8rem;
+    display: block;
+    width:80%;
+}
+#projects{
+    margin-left: 6%;
+    margin-top: 5%;
+    font-family: Poppins;
+    font-size: 0.6em;
+    letter-spacing: 0.05em;
+}
+#imgs1{
+    height:2.4rem;
+    position: absolute;
+    top:18%;
+    left:85%;
+}
+#skillh{
+    font-size: 2.4rem;
+}
+#projecth{
+    font-size:2.4rem;
+    margin-top: 8%
+}
+.projh1{
+    font-size: 1.3rem;
+    letter-spacing: 0.03rem;
+    padding-top: 0.5rem;
+}
+.projcp{
+    width:85%;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+.contents{
+    height:18rem;
+    width:90%;
+}
+.display{
+    height: 18rem;
+    width:90%;
+    padding-bottom: 5%;
+}
+.projectcont1{
+    flex-direction: column;
+    text-align: center;
+    height:40rem;
+}
+.projectsdiv{
+    height:147rem;
+}
+/*contact*/
+.main{
+
+    height:34rem;
+    width:80%;
+
+
+}
+.over{
+    display: none;
+
+}
+.contactp{
+    margin-top:2.8rem;
+    text-align: center;
+    word-spacing: 1rem;
+}
+
+#excel{
+    margin-left: 8%;
+}
+.entry{
+    width:100%;
+ 
+    position: relative;
+    top:8%;
+    left:10%;
+    height:66%;
+}
+.sec{
+    color:rgb(218, 92, 92);
+    letter-spacing:0.1rem;
+    font-weight: bold;
+    margin-top: 2.8rem;
+    font-size: 2rem;
+    font-family: Ubuntu;
+    word-spacing: 0.1rem;
+    margin-bottom:4rem;
+    cursor:default;
+}
+.inl1{
+    border: 0px;
+    border-bottom: 1px solid rgb(19, 76, 57);
+    background-color: rgb(252, 237, 216);
+    width:80%;
+    height:2rem;
+    font-family: Poppins;
+    font-size: 1rem;
+}
+textarea.inl1{
+    height: 6rem;
+}
+.btnl1{
+    border-radius: 0px;
+    border:0px;
+    background-color:rgb(218, 92, 92);
+    color: white;
+    padding: 0.5rem;
+    width:22%;
+    font-size: 0.9rem;
+    margin-top: 7%;
+    font-family: Ubuntu;
+    position: relative;
+    left:59%;
+    box-shadow: 2px 2px 8px 0px rgb(126, 16, 16);
+    transition: scale 0.3s;
+}
+}
+
+/*media queries for mobile*/
+@media only screen and  (max-width:767px) and (min-width : 320px)
+{
+    .firstdiv{
+        flex-direction: column;
+        height: 93rem;
+        }
+        .card{
+            width:85%;
+        }
+        .themei{
+            height:4.3%;
+            right:8%;
+            top:3%;
+        }
+        .topcon{
+
+            left:8%;
+            top:10%;
+            width: 90%;
+        }  
+        nav{
+    flex-direction: row;
+    width:60%;
+    border: 1px solid rgb(144, 44, 44);
+    border-radius: 24px;
+    position: fixed;
+    height:3%;
+    top:3%;
+    left:10%;
+    justify-content: space-between;
+    padding-top: 1.5%;
+    padding-bottom:1.5%;
+    background-color: black;
+    z-index: 3;
+        }
+        nav:hover{
+            height:3%;
+            cursor: pointer;
+            }
+            nav > img:hover{
+            transform: scale(1);
+            }
+            #firsth{
+                font-size: 4rem;
+                letter-spacing: 0.1rem;
+            
+            }
+#firstd{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+#mark1{
+
+    font-size: 3.5rem;
+
+}
+#mark1:hover{
+
+
+    transform: scale(1);
+ 
+
+}
+#marks1{
+    font-size:0.6rem;
+    color:rgb(139, 137, 137);
+    letter-spacing: 0.03em;
+    display: block;
+
+}
+.introflex{
+    width:100%;
+}
+ /*about*/
+ .about{
+    position: relative;
+
+    width:95%;
+    padding:0%;
+    left:6%;
+    margin-right: 0;
+}
+.abouth{
+border:1px solid rgb(211, 203, 203);
+font-family: Open Sans;
+font-size: 0.7rem;
+width:4rem;
+display: flex;
+border-radius: 3em;
+padding:0.4rem;
+
+}
+#abouti{
+    width:1.1rem;
+    height: 1.1rem;
+
+}
+#spa{
+    margin-top:2%;
+    margin-left:5%;
+    color:rgb(205, 204, 204);
+    letter-spacing: 1px;
+}
+.aboutc{
+
+width:100%;
+position: relative;
+top:15%;
+
+}
+#ha1{
+color:white;
+font-family: Poppins;
+letter-spacing: 0.06em;
+font-size:2rem;
+
+}
+
+.aboutcd{
+    font-family: Open Sans;
+    color:rgb(171, 166, 166);
+    line-height: 1.8em;
+    letter-spacing: 0.03em;
+    
+}
+#refer{
+    height: 19rem;
+    width:19rem;
+    margin:auto;
+ 
+
+}
+.aboutflex{
+   flex-direction: column;
+   width:90%;
+   padding-right: 1%;
+
+
+}
+.edu{
+    margin-top: 4rem;
+    margin-right: 0rem;
+    padding-right: 0rem;
+height: 37.5rem;
+text-align: left;
+width:85%;
+
+}
+#eduh{
+color:white;
+font-family: Open Sans;
+font-size: 1.5rem;
+letter-spacing: 0.04em;
+}
+#spe{
+color:rgb(218, 92, 92);
+
+}
+
+.educontent{
+    border-left:0.8px solid rgb(224, 220, 220);
+    width:100%;
+    text-align: left;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3%;
+    margin-top: 5%;
+    margin-left: 0;
+}
+           /**/
+          
+            .service{
+
+                width:90%;
+                position: relative;
+                left:2%;
+                margin-top: 12%;
+                padding:1%;
+                height:65rem;
+            
+            }
+            .serviceh{
+                border:1px solid rgb(211, 203, 203);
+            font-family: Open Sans;
+            font-size: 0.7rem;
+            width:5rem;
+            display: flex;
+            border-radius: 3em;
+            padding:0.4rem;
+            
+            }
+            #sps{
+                margin-top:2%;
+                margin-left:5%;
+                color:rgb(205, 204, 204);
+                letter-spacing: 1px;
+            }
+            #seh{
+                color:white;
+                font-family: Poppins;
+                letter-spacing: 0.08rem;
+                font-size:1.6rem;
+                margin-top: 10%;
+            }
+            .service1{
+      
+                position: relative;
+                height:15%;
+                width:100%;
+                border-bottom-left-radius: 2em;
+                border-bottom-right-radius: 2em;
+                margin: auto;
+                margin-top: 15%;
+                transition: border 0.8s;
+            
+            }
+            .service1:hover{
+                border-color: firebrick;
+            }
+            .serp1{
+                color: rgb(252, 237, 216);
+                font-family: Open Sans;
+                font-size: 1.2rem;
+                margin-left: 1.2rem;
+                letter-spacing: 0.03rem;
+                padding-top: 3%;
+                cursor: pointer;
+            
+            }
+            .service1:hover>.serp1{
+                color:rgb(197, 72, 72);
+            }
+            #spser1{
+                color:rgb(178, 169, 169);
+                font-family: Open Sans;
+                letter-spacing: 0.05rem;
+                margin-left: 1.2rem;
+                font-size: 0.8rem;
+                display: block;
+            }
+            #projects{
+                color:aliceblue;
+                display: block;
+                margin-left: 1.2rem;
+                margin-top: 5%;
+                font-family: Poppins;
+                font-size: 0.6rem;
+                letter-spacing: 0.05em;
+            }
+            .service1:hover>#projects{
+                text-decoration: underline;
+            }
+            #imgs1{
+                height:2rem;
+                position: absolute;
+                top:10%;
+                left:85%;
+                filter: invert(35%) sepia(8%) saturate(6785%) hue-rotate(324deg) brightness(80%) contrast(102%);
+                transition: filter 0.8s;
+            }
+
+            #skillh{
+                color:white;
+                font-family: Open Sans;
+                letter-spacing: 0.04em;
+                font-size:1.9rem;
+                text-align: center;
+                margin-top: 10%;
+
+            }
+            #eceser{
+               display: none;
+            }
+            .wrapper2{
+                width: 100%;
+            }
+            .projectsdiv{
+
+                width:90%;
+                margin:auto ;
+                margin-top: 12%;
+                padding:1%;
+                position: relative;
+                text-align: center;
+                height: 140rem;
+            }
+            #projecth{
+                color:white;
+                font-family: Open Sans;
+                letter-spacing: 0.05rem;
+                font-size:2.3rem;
+                margin-top: 13%;
+            }
+            .projectcont1{
+              
+                height:26%;
+            display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            .contents{
+               
+                border-top-left-radius: 1.3rem;
+                border-bottom-left-radius: 1.3rem;
+                width:98%;
+                border-top:1px solid rgb(121, 121, 120);
+                border-left:1px solid rgb(121, 121, 120);
+                border-bottom:1px solid rgb(121, 121, 120);
+                transition: border 0.7s;
+                cursor: pointer;
+                overflow: scroll;
+                margin-top: 1%;
+                padding: 1.5%;
+            }
+            .display{
+                border-top:1px solid rgb(121, 121, 120);
+                border-right:1px solid rgb(121, 121, 120);
+                border-bottom:1px solid rgb(121, 121, 120);
+                width:100%;
+                border-top-right-radius: 1.3rem;
+                border-bottom-right-radius:1.3em;
+
+               
+            
+            }
+            .imgc{
+                transform: scaleY(0.8);
+            }
+            .projh1{
+                color: rgb(252, 237, 216);
+                font-family: Open Sans;
+                font-size: 1.3rem;
+                letter-spacing: 0.03rem;
+                padding-top: 0.5rem;
+                cursor: pointer;
+                transition: color 0.5s;
+            }
+            .contents:hover>.projh1{
+                color:rgb(197, 72, 72);
+            }
+            .projcp{
+                font-family: Open Sans;
+                color:rgb(132, 129, 129);
+                letter-spacing: 0.03rem;
+                text-align: left;
+                margin: auto;
+                width:95%;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                
+            }
+            .projcp2{
+                width:95%;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+            }
+            .over{
+                display: none;
+            }
+        .main{
+            width:95%;
+            height:28rem;
+            border-top-left-radius: 10px;
+        }
+        .entry{
+            width:100%;
+         
+            position: relative;
+            left:8%;
+            top:8%;
+            height:100%;
+        }
+        .sec{
+            color:rgb(218, 92, 92);
+            letter-spacing:0.1rem;
+            font-weight: bold;
+            margin-top: 2.8rem;
+            font-size: 1.5rem;
+            font-family: Ubuntu;
+            word-spacing: 0.1rem;
+            margin-bottom:3rem;
+        }
+        textarea.inl1{
+            height: 4.5rem;
+        }
+        .btnl1{
+            border-radius: 0px;
+            border:0px;
+            background-color:rgb(218, 92, 92);
+            color: white;
+            padding: 0.5rem;
+            width:35%;
+            font-size: 0.9rem;
+            margin-top: 7%;
+            font-family: Ubuntu;
+            position: relative;
+            left:59%;
+            box-shadow: 2px 2px 8px 0px rgb(126, 16, 16);
+            transition: scale 0.3s;
+        }
+}
+#preloader {
+    background: #000 url(Image/loader.gif) no-repeat center center;
+    background-size:10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+
+    z-index: 100 ;
+}

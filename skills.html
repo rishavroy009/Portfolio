@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="glass2.css">
+    <style>
+       .wrapper2{
+    font-family: consolas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1d061a;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+}
+.container .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    background: linear-gradient(aqua,rgba(255,255,255,0.01),aqua);
+}
+.container .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(40px);
+    background: linear-gradient(aqua,rgba(255,255,255,0.01));
+}
+.container .box:nth-child(1):hover::before,
+.container .box:nth-child(1):hover::after{
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+}
+.container .box:nth-child(2):hover::before,
+.container .box:nth-child(2):hover::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.container .box:nth-child(3):hover::before,
+.container .box:nth-child(3):hover::after{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.container .box:hover::before,
+.container .box:hover::after{
+    transform: skewX(0deg);
+    left: 10px;
+    width: 200px;
+}
+.container .box span{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    opacity: 0;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+}
+@keyframes animate {
+    0%,100%{
+        transform: translateY(10px);;
+    }
+    50%{
+        transform: translateY(-10px);;
+    }
+}
+.container .box:hover span::before{
+    top: -50px;
+    left: 10px;
+    width: 25%;
+    height: 20%;
+    opacity: 1;
+}
+
+
+.container .box span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    opacity: 0;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.05);
+    animation-delay: -1s;
+}
+.container .box:hover span::after{
+    bottom: -50px;
+    right: 10px;
+    width: 25%;
+    height: 20%;
+    opacity: 1;
+}
+#data{
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    /* background: rgba(255.255,255,0.05); */
+    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transform: 0.5;
+    color: black;
+    transition: 1s;
+}
+.container .box:hover #data{
+    left: -50px;
+    padding: 60px 40px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper2">
+        <div class="container">
+            <div class="box">
+                <div id="data">
+                    <span></span>
+                    <div class="content"></div>
+                    <h2>Card one</h2>
+                    <p>weoihfewjb fewq oihfewh oi r3ho
+                    i4hoirh io3r fqde qqew erw
+                    r32j t t342 5y 5y4 4y54 y54 5y4
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div id="data">
+                    <span></span>
+                    <div class="content"></div>
+                    <h2>Card one</h2>
+                    <p>weoihfewjb fewq oihfewh oi r3ho
+                    i4hoirh io3r fqde qqew erw
+                    r32j t t342 5y 5y4 4y54 y54 5y4
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div id="data">
+                    <span></span>
+                    <div class="content"></div>
+                    <h2>Card one</h2>
+                    <p>weoihfewjb fewq oihfewh oi r3ho
+                    i4hoirh io3r fqde qqew erw
+                    r32j t t342 5y 5y4 4y54 y54 5y4
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>
